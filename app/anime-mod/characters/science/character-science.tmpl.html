@@ -1,0 +1,59 @@
+<div data-ng-repeat="i in vm.charactersIndexes()">
+  <div ng-if="$even" layout="row" layout-xs="column" layout-align="space-around center" layout-margin>
+    <tri-widget flex  title-position="top">
+      <img ng-src="{{ vm.characters[i]['image'] }}" />
+      <div style="padding: 18px">
+        <h2 style="font-size: 14px; color: #5E5F77; line-height: 0.2">{{ vm.characters[i]['subtitle'] }}</h2>
+        <h1 style="font-size: 24px"><a href="{{vm.characters[i]['relative']}}" target="_blank">{{ vm.characters[i]['name'] }}</a> {{ vm.characters[i]['maxHp'] }}</h1>
+
+        <div class="char-li">
+          <li>作品： {{ vm.characters[i]['from'] }}</li>
+          <li>声优： {{ vm.characters[i]['voice'] }}</li>
+          <li>设计： {{ vm.characters[i]['designer'] }}</li>
+          <li>画师： {{ vm.characters[i]['illustrator'] }}</li>
+        </div>
+
+
+
+        <h3 style="font-weight: 400;
+    letter-spacing: 1px; margin-top: 50px;color: darkslategray;">技能:</h3>
+        <div data-ng-repeat="skill in vm.characters[i]['skills']">
+          <h2 style="font-size: 16px; background-color: aliceblue;">{{ skill["name"] }}</h2>
+          <p style="font-size: 13px">{{ skill["text"] }}</p>
+        </div>
+
+      </div>
+    </tri-widget>
+    <tri-widget  flex  title-position="top">
+      <img ng-src="{{ vm.characters[i+1]['image'] }}" />
+      <div style="padding: 18px">
+        <h2 style="font-size: 14px; color: #5E5F77; line-height: 0.2">{{ vm.characters[i+1]['subtitle'] }}</h2>
+        <h1 style="font-size: 24px"><a href="{{vm.characters[i+1]['relative']}}" target="_blank">{{ vm.characters[i+1]['name'] }}</a> {{ vm.characters[i+1]['maxHp'] }}</h1>
+
+        <div ng-if="vm.characters[i+1]" class="char-li">
+          <li>作品： {{ vm.characters[i+1]['from'] }}</li>
+          <li>声优： {{ vm.characters[i+1]['voice'] }}</li>
+          <li>设计： {{ vm.characters[i+1]['designer'] }}</li>
+          <li>画师： {{ vm.characters[i+1]['illustrator'] }}</li>
+        </div>
+
+
+
+        <h3 style="font-weight: 400;
+    letter-spacing: 1px; margin-top: 50px;color: darkslategray;" ng-if="vm.characters[i+1]">技能:</h3>
+        <div data-ng-repeat="skill in vm.characters[i+1]['skills']">
+          <h2 style="font-size: 16px; background-color: aliceblue;">{{ skill["name"] }}</h2>
+          <p style="font-size: 13px">{{ skill["text"] }}</p>
+        </div>
+
+      </div>
+    </tri-widget>
+  </div>
+</div>
+
+<style>
+  .char-li li{
+    font-size: 12px;
+    color: cornflowerblue;
+  }
+</style>
