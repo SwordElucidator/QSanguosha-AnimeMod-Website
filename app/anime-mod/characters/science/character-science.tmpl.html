@@ -1,7 +1,7 @@
 <div data-ng-repeat="i in vm.charactersIndexes()">
   <div ng-if="$even" layout="row" layout-xs="column" layout-align="space-around center" layout-margin>
     <tri-widget flex  title-position="top">
-      <img ng-src="{{ vm.characters[i]['image'] }}" />
+      <img ng-src="{{ vm.characters[i]['image'] }}" style="width: 100% !important; height: auto !important;" />
       <div style="padding: 18px">
         <h2 style="font-size: 14px; color: #5E5F77; line-height: 0.2">{{ vm.characters[i]['subtitle'] }}</h2>
         <h1 style="font-size: 24px"><a href="{{vm.characters[i]['relative']}}" target="_blank">{{ vm.characters[i]['name'] }}</a> {{ vm.characters[i]['maxHp'] }}</h1>
@@ -17,15 +17,17 @@
 
         <h3 style="font-weight: 400;
     letter-spacing: 1px; margin-top: 50px;color: darkslategray;">技能:</h3>
-        <div data-ng-repeat="skill in vm.characters[i]['skills']">
-          <h2 style="font-size: 16px; background-color: aliceblue;">{{ skill["name"] }}</h2>
+        <div data-ng-repeat="skill in vm.characters[i]['skills']" >
+          <h2 ng-if="!skill['waked']" style="font-size: 16px; background-color: aliceblue;">{{ skill["name"] }}</h2>
+          <h2 ng-if="skill['waked']" style="font-size: 16px; background-color: mediumpurple;">{{ skill["name"] }}</h2>
           <p style="font-size: 13px">{{ skill["text"] }}</p>
+          <p ng-if="skill['voice']" style="font-size: 11px; font-style: italic; color: #5E5F77">——{{ skill["voice"] }}</p>
         </div>
 
       </div>
     </tri-widget>
     <tri-widget  flex  title-position="top">
-      <img ng-src="{{ vm.characters[i+1]['image'] }}" />
+      <img ng-src="{{ vm.characters[i+1]['image'] }}" style="width: 100% !important; height: auto !important;"/>
       <div style="padding: 18px">
         <h2 style="font-size: 14px; color: #5E5F77; line-height: 0.2">{{ vm.characters[i+1]['subtitle'] }}</h2>
         <h1 style="font-size: 24px"><a href="{{vm.characters[i+1]['relative']}}" target="_blank">{{ vm.characters[i+1]['name'] }}</a> {{ vm.characters[i+1]['maxHp'] }}</h1>
@@ -42,8 +44,10 @@
         <h3 style="font-weight: 400;
     letter-spacing: 1px; margin-top: 50px;color: darkslategray;" ng-if="vm.characters[i+1]">技能:</h3>
         <div data-ng-repeat="skill in vm.characters[i+1]['skills']">
-          <h2 style="font-size: 16px; background-color: aliceblue;">{{ skill["name"] }}</h2>
+          <h2 ng-if="!skill['waked']" style="font-size: 16px; background-color: aliceblue;">{{ skill["name"] }}</h2>
+          <h2 ng-if="skill['waked']" style="font-size: 16px; background-color: mediumpurple;">{{ skill["name"] }}</h2>
           <p style="font-size: 13px">{{ skill["text"] }}</p>
+          <p ng-if="skill['voice']" style="font-size: 11px; font-style: italic; color: #5E5F77">——{{ skill["voice"] }}</p>
         </div>
 
       </div>

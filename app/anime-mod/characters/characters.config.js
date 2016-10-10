@@ -18,23 +18,33 @@
         })
         .state('triangular.anime-mod-characters-magic', {
           url: '/anime-mod/characters-magic',
-          templateUrl: 'app/anime-mod/anime-mod/information.tmpl.html'
+          templateUrl: 'app/anime-mod/characters/science/character-science.tmpl.html',
+          controller: "MagicCharactersController",
+          controllerAs: "vm"
         })
         .state('triangular.anime-mod-characters-real', {
           url: '/anime-mod/characters-real',
-          templateUrl: 'app/anime-mod/anime-mod/information.tmpl.html'
+          templateUrl: 'app/anime-mod/characters/science/character-science.tmpl.html',
+          controller: "RealCharactersController",
+          controllerAs: "vm"
         })
         .state('triangular.anime-mod-characters-touhou', {
           url: '/anime-mod/characters-touhou',
-          templateUrl: 'app/anime-mod/anime-mod/information.tmpl.html'
+          templateUrl: 'app/anime-mod/characters/science/character-science.tmpl.html',
+          controller: "TouhouCharactersController",
+          controllerAs: "vm"
         })
         .state('triangular.anime-mod-characters-kancolle', {
           url: '/anime-mod/characters-kancolle',
-          templateUrl: 'app/anime-mod/anime-mod/information.tmpl.html'
+          templateUrl: 'app/anime-mod/characters/science/character-science.tmpl.html',
+          controller: "KancolleCharactersController",
+          controllerAs: "vm"
         })
         .state('triangular.anime-mod-characters-diva', {
           url: '/anime-mod/characters-diva',
-          templateUrl: 'app/anime-mod/anime-mod/information.tmpl.html'
+          templateUrl: 'app/anime-mod/characters/science/character-science.tmpl.html',
+          controller: "DivaCharactersController",
+          controllerAs: "vm"
         });
     // next add the menu item that points to the above state.
     triMenuProvider.addMenu({

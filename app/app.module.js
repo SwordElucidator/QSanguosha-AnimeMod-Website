@@ -9,7 +9,7 @@
             'googlechart', 'chart.js', 'linkify', 'ui.calendar', 'angularMoment', 'textAngular', 'uiGmapgoogle-maps', 'hljs', 'md.data.table', angularDragula(angular), 'ngFileUpload',
             // 'seed-module',
             // uncomment above to activate the example seed module
-            'app.translate',
+            'app.translate'
             // only need one language?  if you want to turn off translations
             // comment out or remove the 'app.translate', line above
             //'app.permission',
