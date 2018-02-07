@@ -1,9 +1,21 @@
 <div flex="noshrink" layout="column" layout-align="end none">
-    <md-toolbar ng-controller="AppFooterController as footer" md-theme="{{triSkin.elements.toolbar}}">
+    <md-toolbar ng-controller="AppFooterController as footer" class="am-footer" md-theme="{{triSkin.elements.toolbar}}">
         <div class="md-toolbar-tools md-body-1" layout="row" layout-align="space-between center">
-            <h2>{{footer.settings.name}}</h2>
-            <h2 hide-xs ng-bind-html="footer.settings.copyright"></h2>
-            <h2>v{{footer.settings.version}}</h2>
+            <h4>{{footer.settings.name}}</h4>
+            <h4 hide-xs ng-bind-html="footer.settings.copyright"></h4>
+            <h4>v{{footer.settings.version}}</h4>
         </div>
     </md-toolbar>
 </div>
+
+<style>
+  .am-footer{
+    min-height: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.25) !important;
+  }
+
+  .am-footer h4{
+    color: white;
+  }
+</style>

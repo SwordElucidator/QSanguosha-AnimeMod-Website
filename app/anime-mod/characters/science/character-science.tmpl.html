@@ -1,6 +1,7 @@
+<div class="all-back" ng-style="{ background: vm.backgroundImage }"></div>
 <div data-ng-repeat="i in vm.charactersIndexes()">
-  <div ng-if="$even" layout="row" layout-xs="column" layout-align="space-around center" layout-margin>
-    <tri-widget flex  title-position="top">
+  <div ng-if="$even" layout="row" layout-xs="column" layout-align="space-around center" layout-margin  class="inner">
+    <tri-widget flex  title-position="top" style="max-width: 420px;">
       <img ng-src="{{ vm.characters[i]['image'] }}" style="width: 100% !important; height: auto !important;" />
       <div style="padding: 18px">
         <h2 style="font-size: 14px; color: #5E5F77; line-height: 0.2">{{ vm.characters[i]['subtitle'] }}</h2>
@@ -26,9 +27,9 @@
 
       </div>
     </tri-widget>
-    <tri-widget  flex  title-position="top">
-      <img ng-src="{{ vm.characters[i+1]['image'] }}" style="width: 100% !important; height: auto !important;"/>
-      <div style="padding: 18px">
+    <tri-widget ng-if="vm.characters[i+1]"  flex  title-position="top" style="max-width: 420px;">
+      <img ng-if="vm.characters[i+1]" ng-src="{{ vm.characters[i+1]['image'] }}" style="width: 100% !important; height: auto !important;"/>
+      <div ng-if="vm.characters[i+1]" style="padding: 18px">
         <h2 style="font-size: 14px; color: #5E5F77; line-height: 0.2">{{ vm.characters[i+1]['subtitle'] }}</h2>
         <h1 style="font-size: 24px"><a href="{{vm.characters[i+1]['relative']}}" target="_blank">{{ vm.characters[i+1]['name'] }}</a> {{ vm.characters[i+1]['maxHp'] }}</h1>
 
@@ -38,6 +39,10 @@
           <li>设计： {{ vm.characters[i+1]['designer'] }}</li>
           <li>画师： {{ vm.characters[i+1]['illustrator'] }}</li>
         </div>
+<!--
+        <div ng-if="!vm.characters[i+1]" class="char-li">
+          <h1 style="font-size: 24px; color: #5E5F77;">And More...</h2>
+        </div> -->
 
 
 
@@ -52,6 +57,8 @@
 
       </div>
     </tri-widget>
+    <tri-widget ng-if="!vm.characters[i+1]"  flex  title-position="top" style="max-width: 420px; opacity: 0;">
+      </tri-widget>
   </div>
 </div>
 
@@ -59,5 +66,20 @@
   .char-li li{
     font-size: 12px;
     color: cornflowerblue;
+  }
+
+  .inner{
+    opacity: 0.95
+  }
+
+  .all-back{
+    pointer-events:none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);
+
   }
 </style>

@@ -12,6 +12,8 @@
   function RealCharactersController() {
     var vm = this;
 
+    vm.backgroundImage = "url('assets/images/elements/bg3.jpg')"
+
     vm.charactersIndexes = function(){
       return Array.apply(null, {length: vm.characters.length}).map(Number.call, Number)
     };

@@ -9,13 +9,13 @@
     function translateConfig(triSettingsProvider, triRouteProvider) {
         var now = new Date();
         // set app name & logo (used in loader, sidemenu, footer, login pages, etc)
-        triSettingsProvider.setName('QSanguosha Anime MOD');
-        triSettingsProvider.setCopyright('&copy;' + now.getFullYear() + ' mogara.org');
+        triSettingsProvider.setName('Anime MOD');
+        triSettingsProvider.setCopyright('&copy;　NijigenDevs' + now.getFullYear());
         triSettingsProvider.setLogo('assets/images/logo.png');
         // set current version of app (shown in footer)
-        triSettingsProvider.setVersion('0.3');
+        triSettingsProvider.setVersion('0.31');
         // set the document title that appears on the browser tab
-        triRouteProvider.setTitle('QSanguosha Anime MOD');
+        triRouteProvider.setTitle('Anime MOD');
         triRouteProvider.setSeparator('|');
     }
 })();

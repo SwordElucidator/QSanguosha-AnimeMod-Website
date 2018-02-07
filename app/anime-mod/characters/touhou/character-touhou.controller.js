@@ -12,13 +12,14 @@
   function TouhouCharactersController() {
     var vm = this;
 
+    vm.backgroundImage = "url('assets/images/elements/bg4.jpg')"
+
     vm.charactersIndexes = function(){
       return Array.apply(null, {length: vm.characters.length}).map(Number.call, Number)
     };
 
     vm.characters = [
-      {
-        name: '博麗霊夢',
+      {name: '博麗霊夢',
         relative: "https://zh.moegirl.org/zh/%E5%8D%9A%E4%B8%BD%E7%81%B5%E6%A2%A6",
         image: "assets/images/cards/characters/博丽灵梦.jpg",
         maxHp: 3,
@@ -40,8 +41,7 @@
         voice: "中原麻衣",
         illustrator: "A-1",
       },
-        {
-        name: '霧雨魔理沙',
+      {name: '霧雨魔理沙',
         relative: "https://zh.moegirl.org/%E9%9B%BE%E9%9B%A8%E9%AD%94%E7%90%86%E6%B2%99",
         image: "assets/images/cards/characters/Marisa.jpg",
         maxHp: 4,
@@ -61,6 +61,71 @@
         voice: "",
         illustrator: "えふぇ",
       },
+      {name: '东风谷早苗',
+        relative: "https://zh.moegirl.org/%E4%B8%9C%E9%A3%8E%E8%B0%B7%E6%97%A9%E8%8B%97",
+        image: "",
+        maxHp: 3,
+        subtitle: "祭祀风的人类",
+        from: "東方project",
+        skills: [
+          {
+            name: "信仰",
+            text: "每当场上有一名角色展示了一张手牌，你可将牌顶一张牌置于武将牌上；每当一名角色需要进行一次判定，你可将武将牌上一张牌置于牌堆顶。 ",
+          },
+          {
+            name: "风祝",
+            text: "一名角色回合内限一次，当你需要使用或打出一张基本牌时，你可以展示一张手牌，然后进行一次判定。若判定牌与展示牌为同一花色，则视为你使用或打出了该基本牌，反之，你获得该判定牌。",
+          }
+        ],
+        designer: "钉子",
+        voice: "",
+        illustrator: "An2A",
+      },
+      {name: '古明地恋',
+        relative: "https://zh.moegirl.org/%E5%8F%A4%E6%98%8E%E5%9C%B0%E6%81%8B",
+        image: "assets/images/cards/characters/Koishi.jpg",
+        maxHp: 8,
+        subtitle: "紧闭的恋之瞳",
+        from: "東方project",
+        skills: [
+          {
+            name: "遗忘「完全遗忘的存在」",
+            text: "锁定技,你与其他角色计算距离时+99，其他角色与你计算距离时+99。 ",
+          },
+          {
+            name: "无意「无意识的花火」",
+            text: "锁定技,回合结束时你的最大血量随机变为1-10，以此法失去体力时，你令一名角色摸等同于失去的体力值*2的牌。以此法失去体力上限时，你令一名角色失去一点体力；以此法增长体力上限时，你令一名角色回复一点体力。 ",
+          }
+        ],
+        designer: "Sword Elucidator",
+        voice: "",
+        illustrator: "tecoyuke",
+      },
+      {name: '古明地觉',
+        relative: "https://zh.moegirl.org/%E5%8F%A4%E6%98%8E%E5%9C%B0%E8%A7%89",
+        image: "",
+        maxHp: 4,
+        subtitle: "地底的读心少女",
+        from: "東方project",
+        skills: [
+          {
+            name: "窥心",
+            text: "锁定技,你与其他角色计算距离时+99，其他角色与你计算距离时+99。 ",
+          },
+          {
+            name: "回想",
+            text: "锁定技,回合结束时你的最大血量随机变为1-10，以此法失去体力时，你令一名角色摸等同于失去的体力值*2的牌。以此法失去体力上限时，你令一名角色失去一点体力；以此法增长体力上限时，你令一名角色回复一点体力。 ",
+          },
+		  {
+            name: "赋职",
+            text: "主公技，你可以跳过你的出牌阶段，若你手牌数大于你当前体力值，你可指定一名东方势力角色，将手牌数与体力值之差的手牌交给该角色。若如此做，回合结束时，该角色执行一个额外的出牌阶段。  ",
+          }
+        ],
+        designer: "夜华",
+        voice: "",
+        illustrator: "夜华提供",
+      },
+
     ];
   }
 })();

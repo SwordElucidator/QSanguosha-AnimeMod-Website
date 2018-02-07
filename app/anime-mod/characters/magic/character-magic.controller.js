@@ -12,6 +12,8 @@
   function MagicCharactersController() {
     var vm = this;
 
+    vm.backgroundImage = "url('assets/images/elements/bg2.jpg')"
+
     vm.charactersIndexes = function(){
       return Array.apply(null, {length: vm.characters.length}).map(Number.call, Number)
     };
@@ -86,7 +88,7 @@
         voice: "南條愛乃",
         illustrator: "瀬菜モナコ",
       },
-      {   name: 'Saber',   relative: "https://zh.moegirl.org/%E9%98%BF%E5%B0%94%E6%89%98%E8%8E%89%E9%9B%85%C2%B7%E6%BD%98%E5%A4%9A%E6%8B%89%E8%B4%A1",   image: "assets/images/cards/characters/Saber.jpg",   maxHp: 4,   subtitle: "吾王",   from: "Fate Zero",   skills: [     {       name: "圣剑「约束胜利之剑」",       text: "出牌阶段限一次，你可以将武将牌翻面，然后对一名角色造成X点伤害并将其装备区里的所有牌置入弃牌堆（X为你与其装备牌数的差的绝对值）。",  voice:"Ex...calibur！！！！！！"   },     {       name: "剑鞘「远离尘世的理想乡」",       text: "锁定技，每当你受到一次伤害时，有1/3概率防止此伤害。",     },   ],   designer: "Sword Elucidator",   voice: "川澄绫子",   illustrator: "しらび", },
+      {   name: 'Saber',   relative: "https://zh.moegirl.org/%E9%98%BF%E5%B0%94%E6%89%98%E8%8E%89%E9%9B%85%C2%B7%E6%BD%98%E5%A4%9A%E6%8B%89%E8%B4%A1",   image: "assets/images/cards/characters/saber.png",   maxHp: 4,   subtitle: "吾王",   from: "Fate Zero",   skills: [     {       name: "圣剑「约束胜利之剑」",       text: "出牌阶段限一次，你可以将武将牌翻面，然后对一名角色造成X点伤害并将其装备区里的所有牌置入弃牌堆（X为你与其装备牌数的差的绝对值）。",  voice:"Ex...calibur！！！！！！"   },     {       name: "剑鞘「远离尘世的理想乡」",       text: "锁定技，每当你受到一次伤害时，有1/3概率防止此伤害。",     },   ],   designer: "Sword Elucidator",   voice: "川澄绫子",   illustrator: "しらび", },
       {   name: '言峰綺礼',   relative: "https://zh.moegirl.org/%E8%A8%80%E5%B3%B0%E7%BB%AE%E7%A4%BC",   image: "assets/images/cards/characters/言峰绮礼.jpg",   maxHp: 4,   subtitle: "麻婆神父",   from: "Fate Zero/Fate Stay Night",   skills: [     {       name: "愉悦「追求愉悦」",       text: "锁定技，每当一名角色造成一次伤害后 ，你摸等同于此伤害数量的牌。",   voice: "这样的毁灭！这样的悲鸣！居然是我的愉悦？"  },     {       name: "陷害「阴谋与剧本」",       text: "每当一名角色造成伤害时，若该伤害可以令目标进入濒死，你可以指定该伤害的来源。",   voice:"酒的味道...比想象中的还要善变..."  },   ],   designer: "Sword Elucidator",   voice: "中田讓治",   illustrator: "zihad", },
 
 
