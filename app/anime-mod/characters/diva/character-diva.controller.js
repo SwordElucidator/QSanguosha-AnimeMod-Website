@@ -87,7 +87,7 @@
       },
 	  {name: '小木曾雪莱',
         relative: "https://zh.moegirl.org/%E5%B0%8F%E6%9C%A8%E6%9B%BE%E9%9B%AA%E8%8F%9C",
-        image: "assets/images/cards/characters/小木曽雪菜.jpg",
+        image: "assets/images/cards/characters/setsuna.jpg",
         maxHp: 3,
         subtitle: "高岭之花",
         from: "白色相簿2",

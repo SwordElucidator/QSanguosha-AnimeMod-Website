@@ -227,7 +227,7 @@
       },
       {name: '加贺',
         relative: "https://zh.moegirl.org/%E8%88%B0%E9%98%9FCollection:%E5%8A%A0%E8%B4%BA",
-        image: "assets/images/cards/characters/Kaga.jpg",
+        image: "assets/images/cards/characters/kaga.jpg",
         maxHp: 4,
         subtitle: "一航战的前辈",
         from: "艦隊collection",
