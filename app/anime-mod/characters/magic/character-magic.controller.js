@@ -113,7 +113,7 @@
       },
       {name: 'Saber',
 	    relative: "https://zh.moegirl.org/%E9%98%BF%E5%B0%94%E6%89%98%E8%8E%89%E9%9B%85%C2%B7%E6%BD%98%E5%A4%9A%E6%8B%89%E8%B4%A1",
-		image: "assets/images/cards/characters/Saber.png",
+		image: "assets/images/cards/characters/saber.png",
 		maxHp: 4,
 		subtitle: "吾王",
 		from: "Fate Zero",
