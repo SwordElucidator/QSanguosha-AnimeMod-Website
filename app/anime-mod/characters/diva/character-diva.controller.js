@@ -109,7 +109,7 @@
       },
       {name: '兰花·李',
         relative: "https://zh.moegirl.org/%E5%85%B0%E8%8A%B1%C2%B7%E6%9D%8E",
-        image: "",
+        image: "assets/images/cards/characters/ranka.jpg",
         maxHp: 3,
         subtitle: "超时空灰姑娘",
         from: "超时空要塞F",
