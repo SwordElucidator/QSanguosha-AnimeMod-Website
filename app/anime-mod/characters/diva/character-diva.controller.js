@@ -131,7 +131,7 @@
       },
       {name: '雪莉露·诺姆',
         relative: "https://zh.moegirl.org/%E9%9B%AA%E9%9C%B2%E8%AF%BA%E5%A7%86",
-        image: "assets/images/cards/characters/sheryl.png",
+        image: "assets/images/cards/characters/0211/sher.png",
         maxHp: 3,
         subtitle: "银河的妖精",
         from: "超时空要塞F",
