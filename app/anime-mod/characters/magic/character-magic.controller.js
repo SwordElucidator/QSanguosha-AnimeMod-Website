@@ -40,6 +40,26 @@
         voice: "钉宫理惠",
         illustrator: "舘津テト",
       },
+      {name: '尤斯蒂娅',
+        relative: "https://zh.moegirl.org/zh/%E5%B0%A4%E6%96%AF%E8%92%82%E5%A8%85%C2%B7%E9%98%BF%E6%96%AF%E6%89%98%E5%88%A9%E4%BA%9A",
+        image: "assets/images/cards/characters/eustia.jpg",
+        maxHp: 3,
+        subtitle: "圣子",
+        from: "秽翼的尤斯蒂娅",
+        skills: [
+          {
+            name: "净化「天使·净化之力」",
+            text: "回合开始前，你可以交给一名角色一张牌并令其选择一项：1、令你获得其判定区内的一张牌。2、令你和其各摸一张牌。3、令其回复一点体力。",
+          },
+          {
+            name: "救赎「親愛なる世界へ」",
+            text: "限定技，一名角色求桃阶段结束时，若该角色仍处于濒死状态，你可以使其回复体力至X，然后令其补充手牌至X张（X不超过8）。X为该角色的体力上限。",
+          },
+        ],
+        designer: "Sword Elucidator",
+        voice: "南條愛乃",
+        illustrator: "瀬菜モナコ",
+      },
       {name: '露易丝',
         relative: "https://zh.moegirl.org/%E9%9C%B2%E6%98%93%E4%B8%9D%C2%B7%E6%B3%95%E5%85%B0%E8%A5%BF%E6%96%AF%C2%B7%E9%9C%B2%C2%B7%E5%B8%83%E6%9C%97%C2%B7%E6%9D%9C%C2%B7%E6%8B%89%C2%B7%E7%93%A6%E5%88%A9%E5%9F%83%E5%B0%94",
         image: "assets/images/cards/characters/露易丝.png",
@@ -91,26 +111,6 @@
 		voice: "日野聪",
 		illustrator: "节操Staff",
 		},
-      {name: '尤斯蒂娅',
-        relative: "https://zh.moegirl.org/zh/%E5%B0%A4%E6%96%AF%E8%92%82%E5%A8%85%C2%B7%E9%98%BF%E6%96%AF%E6%89%98%E5%88%A9%E4%BA%9A",
-        image: "assets/images/cards/characters/eustia.jpg",
-        maxHp: 3,
-        subtitle: "圣子",
-        from: "秽翼的尤斯蒂娅",
-        skills: [
-          {
-            name: "净化「天使·净化之力」",
-            text: "回合开始前，你可以交给一名角色一张牌并令其选择一项：1、令你获得其判定区内的一张牌。2、令你和其各摸一张牌。3、令其回复一点体力。",
-          },
-          {
-            name: "救赎「親愛なる世界へ」",
-            text: "限定技，一名角色求桃阶段结束时，若该角色仍处于濒死状态，你可以使其回复体力至X，然后令其补充手牌至X张（X不超过8）。X为该角色的体力上限。",
-          },
-        ],
-        designer: "Sword Elucidator",
-        voice: "南條愛乃",
-        illustrator: "瀬菜モナコ",
-      },
       {name: 'Saber',
 	    relative: "https://zh.moegirl.org/%E9%98%BF%E5%B0%94%E6%89%98%E8%8E%89%E9%9B%85%C2%B7%E6%BD%98%E5%A4%9A%E6%8B%89%E8%B4%A1",
 		image: "assets/images/cards/characters/saber.png",
@@ -132,6 +132,55 @@
 		voice: "川澄绫子",
 		illustrator: "しらび",
 				},
+        {name: '吉尔伽美什',
+  	    relative: "https://zh.moegirl.org/%E5%90%89%E5%B0%94%E4%BC%BD%E7%BE%8E%E4%BB%80(Fate)",
+  	    image: "assets/images/cards/characters/kinpika.jpg",
+  	    maxHp: 4,
+  	    subtitle: "金闪闪",
+  	    from: "Fate Zero/Fate Stay Night",
+  	    skills: [
+  	      {
+  		    name: "财宝「Gate of Babylon」",
+  		    text: "回合开始时，你可以搜寻一张武器牌并放在你的武将牌上，称为“王之财宝”。出牌阶段，你可以将任意张武器牌置入“王之财宝”。你可选择一张“王之财宝”，将其视为你对一名其他角色使用了一张任意属性的【杀】。以此法使用的【杀】无视距离且不计入回合次数限制。",
+  		    voice: "Gate of Babylon"
+  		  },
+  		  {
+  		    name: "天锁「天之锁」",
+  		    text: "你指定一名其他角色为唯一目标时，可以令其横置。你指定横置的角色为目标使用【杀】时，其需弃置一张基本牌，否则该【杀】不能闪避。",
+  			voice: "天之锁！"
+  		  },
+  		],
+  		designer: "Sword Elucidator",
+  		voice: "関智一",
+  		illustrator: "null",
+  		},
+        {name: '衛宮切嗣',
+  	    relative: "https://zh.moegirl.org/%E5%8D%AB%E5%AE%AB%E5%88%87%E5%97%A3",
+  	    image: "assets/images/cards/characters/kiritsugu.jpg",
+  	    maxHp: 4,
+  	    subtitle: "正义天秤的衡量者",
+  	    from: "Fate Zero",
+  	    skills: [
+  	      {
+  		    name: "起源「起源弹」",
+  		    text: "出牌阶段，你可以失去一点体力上限，获得一发“起源弹”。若你拥有起源弹，你额外摸“起源弹”数目张牌，你回合使用【杀】次数+“起源弹”数目。你使用【杀】指定一名角色时，需选择是否为“起源弹”（目标不知道选项），当你的【杀】造成的伤害时，若为“起源弹”，目标失去副将外的所有的技能。",
+  		    voice: "这就是小少爷的礼装，起源弹。"
+  		  },
+  		  {
+  		    name: "逼令「自我强制证文」",
+  		    text: "限定技，你指定一名角色，令其获得效果：你对其造成伤害时，取消之，且其不能成为起源弹的目标。若该角色有副将，令该角色移除自己的副将；若该角色没有副将，其受到你指定的你和其以外的来源的两张【杀】（若无来源则无效）。",
+  			voice: "嗯，成立了，我已经无法再伤害你们了。仅限我。"
+  		  },
+  		  {
+  		    name: "剑鞘「亚瑟王的治愈之力」",
+  		    text: "限定技，当一名角色受到造成濒死的伤害时，你可以取消之并令其回复一点体力。 ",
+  			voice: "还活着...还活着...还活着......"
+  		  },
+  		],
+  		designer: "Sword Elucidator",
+  		voice: "小山力也",
+  		illustrator: "砂雲",
+  		},
       {name: '言峰綺礼',
 	    relative: "https://zh.moegirl.org/%E8%A8%80%E5%B3%B0%E7%BB%AE%E7%A4%BC",
 	    image: "assets/images/cards/characters/kirei.jpg",
@@ -154,28 +203,119 @@
 		voice: "中田讓治",
 		illustrator: "zihad",
 		},
-      {name: '神户小鸟',
-	    relative: "https://zh.moegirl.org/%E7%A5%9E%E6%88%B7%E5%B0%8F%E9%B8%9F",
-	    image: "assets/images/cards/characters/k_kotori.jpg",
-	    maxHp: 3,
-	    subtitle: "小小幸福",
-	    from: "Rewrite",
-	    skills: [
-	      {
-		    name: "键使",
-		    text: "锁定技,每当【键】离开牌堆时，你获得这次移动的所有牌，并指定一名其他角色，视为你对其使用了这张【键】。以此法指定的目标对不包括你的其他角色消失，直到1.你下一次发动该技能2.你死亡。 ",
-		    voice: "毕竟小篝就是在这出生的嘛，但是吓了我一跳，最开始还和幽灵一样，现在已经变得和人类一样了。"
-		  },
-		  {
-		    name: "契约",
-		    text: "一名角色濒死阶段结束时，若其体力值小于1，你可以令所有角色各摸X张牌，然后弃置区域内的X张牌，X为5-你的体力上限。若此过程中牌堆清空，你恢复体力上限初值，否则你需失去一点体力上限。 ",
-			voice:"我只是为了救瑚太郎君，所以拼命拼命的求你。"
-		  },
-		],
-		designer: "晴空；Sword Elucidator",
-		voice: "斎藤千和",
-		illustrator: "繭咲悠@三日目東タ-39b",
-		},
+    {name: '英灵卫宫',
+    relative: "https://zh.moegirl.org/%E5%8D%AB%E5%AE%AB%E5%A3%AB%E9%83%8E",
+    image: "assets/images/cards/characters/0211/emiya.png",
+    maxHp: 4,
+    subtitle: "冶炼的英雄",
+    from: "Fate Stay Night",
+    skills: [
+      {
+      name: "投影",
+      text: "出牌阶段限一次，若你的装备区没有武器，你可以声明一种武器，获得其特效直到回合结束。",
+      voice: "Trace......on!"
+    },
+    {
+      name: "崩坏",
+      text: "你可以将一张装备牌当无距离限制的【杀】使用。",
+    voice: "螺旋剑！"
+    },
+    {
+      name: "剑咏",
+      text: "弃牌阶段开始时，若此回合内你未造成伤害，可以摸X张牌。若如此做，你可以将至多X张手牌置于武将牌上，称为“咏”。（X为你已损失的体力值，至少为1；） ",
+    voice: "I am the bone of my sword."
+    },
+    {
+      name: "剑制",
+      text: "觉醒技，结束阶段开始时，若你的”咏“的数量达到三张或更多时，你减1点体力上限，获得每名其他角色各一张手牌并置于你的武将牌上，然后获得技能”剑雨“和”炽天“，此回合结束后进行一个额外的回合。 ",
+    voice: "So as I pray, unlimited blade works. "
+    },
+  ],
+  designer: "昂翼天使",
+  voice: "諏訪部 順一",
+  illustrator: "Type Moon",
+  },
+    {name: '迪卢木多',
+    relative: "https://zh.moegirl.org/%E8%BF%AA%E5%B0%94%E5%A7%86%E5%BE%B7%C2%B7%E5%A5%A5%E8%BF%AA%E9%82%A3(Fate)",
+    image: "assets/images/cards/characters/0211/dirm.png",
+    maxHp: 4,
+    subtitle: "光辉之貌",
+    from: "Fate Zero",
+    skills: [
+      {
+      name: "破魔",
+      text: "锁定技，你使用【杀】时，无视目标角色的防具。",
+      voice: "鲜红地，舞动吧。"
+    },
+    {
+      name: "必灭",
+      text: "每当你使用的【杀】造成伤害后，你可令受到伤害的角色获得1枚“咒”标记，拥有该标记的角色回复体力时，取消之。你死亡时，弃置场上所有的”咒“标记。 ",
+    voice: "飞舞吧，Gae·Buidhe！"
+    },
+  ],
+  designer: "银龙幽影",
+  voice: "緑川光",
+  illustrator: "TYPE-MOON",
+  },
+    {name: '黑化间桐樱',
+    relative: "https://zh.moegirl.org/%E9%97%B4%E6%A1%90%E6%A8%B1",
+    image: "assets/images/cards/characters/sakura1.jpg",
+    maxHp: 8,
+    subtitle: "间桐家的御主",
+    from: "Fate Zero/Fate Stay Night",
+    skills: [
+      {
+      name: "虚数",
+      text: "锁定技,对你造成的伤害和你造成的伤害视为体力流失。准备阶段开始时，你需令一名其他角色流失一点体力。 ",
+      voice: "能够给你的，只有后悔和绝望。"
+    },
+    {
+      name: "吸收",
+      text: "一名其他角色进入濒死时，你可以获得其一个技能并回复一点体力。 ",
+    voice:"和我一起溶解吧。"
+    },
+  ],
+  designer: "Sword Elucidator",
+  voice: "下屋则子",
+  illustrator: "月本葵",
+  },
+    {name: '黑化间桐樱（圣杯模式）',
+    relative: "https://zh.moegirl.org/%E9%97%B4%E6%A1%90%E6%A8%B1",
+    image: "assets/images/cards/characters/sakura2.jpg",
+    maxHp: 4,
+    subtitle: "间桐家的圣杯",
+    from: "Fate Zero/Fate Stay Night",
+    skills: [
+      {
+      name: "虚数",
+      text: "锁定技,对你造成的伤害和你造成的伤害视为体力流失。准备阶段开始时，你需令一名其他角色流失一点体力。 ",
+      voice: "能够给你的，只有后悔和绝望。"
+    },
+    {
+      name: "吸收",
+      text: "一名其他角色进入濒死时，你可以获得其一个技能并回复一点体力。 ",
+    voice:"和我一起溶解吧。"
+    },
+    {
+      name: "圣杯",
+      text: "锁定技，回合开始前，弃置你判定区内的所有牌，若你背面朝上，将你的武将牌翻面。你的摸牌数+3，你的手牌上限+3 ",
+      voice: "不会停下的，妨碍我的话就毁掉你。"
+    },
+    {
+      name: "操影",
+      text: "其他角色指定你为目标时，获得一个“影”标记。一名角色流失体力时，你可以弃置其“影”标记，然后弃置其相同数量的牌。 ",
+    voice:"消失吧！"
+    },
+    {
+      name: "黑·约束胜利之剑",
+      text: "当你失去体力时，你可以对一名其他角色造成X点伤害，X为你和其装备区牌的差，然后弃置其所有的装备牌。  ",
+    voice:"被吾之剑光吞噬吧，Excalibur！！！"
+    },
+  ],
+  designer: "Sword Elucidator",
+  voice: "下屋则子",
+  illustrator: "皇♦小J",
+  },
       {name: '妲丽安',
 	    relative: "https://zh.moegirl.org/%E4%B8%B9%E7%89%B9%E4%B8%BD%E5%AE%89",
 	    image: "assets/images/cards/characters/dalian.png",
@@ -220,65 +360,28 @@
 		voice: "小野大辅",
 		illustrator: "",
 		},
-      {name: '黑化间桐樱',
-	    relative: "https://zh.moegirl.org/%E9%97%B4%E6%A1%90%E6%A8%B1",
-	    image: "assets/images/cards/characters/sakura1.jpg",
-	    maxHp: 8,
-	    subtitle: "间桐家的御主",
-	    from: "Fate Zero/Fate Stay Night",
-	    skills: [
-	      {
-		    name: "虚数",
-		    text: "锁定技,对你造成的伤害和你造成的伤害视为体力流失。准备阶段开始时，你需令一名其他角色流失一点体力。 ",
-		    voice: "能够给你的，只有后悔和绝望。"
-		  },
-		  {
-		    name: "吸收",
-		    text: "一名其他角色进入濒死时，你可以获得其一个技能并回复一点体力。 ",
-			voice:"和我一起溶解吧。"
-		  },
-		],
-		designer: "Sword Elucidator",
-		voice: "下屋则子",
-		illustrator: "月本葵",
-		},
-      {name: '黑化间桐樱（圣杯模式）',
-	    relative: "https://zh.moegirl.org/%E9%97%B4%E6%A1%90%E6%A8%B1",
-	    image: "assets/images/cards/characters/sakura2.jpg",
-	    maxHp: 4,
-	    subtitle: "间桐家的圣杯",
-	    from: "Fate Zero/Fate Stay Night",
-	    skills: [
-	      {
-		    name: "虚数",
-		    text: "锁定技,对你造成的伤害和你造成的伤害视为体力流失。准备阶段开始时，你需令一名其他角色流失一点体力。 ",
-		    voice: "能够给你的，只有后悔和绝望。"
-		  },
-		  {
-		    name: "吸收",
-		    text: "一名其他角色进入濒死时，你可以获得其一个技能并回复一点体力。 ",
-			voice:"和我一起溶解吧。"
-		  },
-		  {
-		    name: "圣杯",
-		    text: "锁定技,回合开始前，弃置你判定区内的所有牌，若你背面朝上，将你的武将牌翻面。你的摸牌数+3，你的手牌上限+3 ",
-		    voice: "不会停下的，妨碍我的话就毁掉你。"
-		  },
-		  {
-		    name: "操影",
-		    text: "其他角色指定你为目标时，获得一个“影”标记。一名角色流失体力时，你可以弃置其“影”标记，然后弃置其相同数量的牌。 ",
-			voice:"消失吧！"
-		  },
-		  {
-		    name: "黑·约束胜利之剑",
-		    text: "当你失去体力时，你可以对一名其他角色造成X点伤害，X为你和其装备区牌的差，然后弃置其所有的装备牌。  ",
-			voice:"被吾之剑光吞噬吧，Excalibur！！！"
-		  },
-		],
-		designer: "Sword Elucidator",
-		voice: "下屋则子",
-		illustrator: "皇♦小J",
-		},
+    {name: '神户小鸟',
+    relative: "https://zh.moegirl.org/%E7%A5%9E%E6%88%B7%E5%B0%8F%E9%B8%9F",
+    image: "assets/images/cards/characters/k_kotori.jpg",
+    maxHp: 3,
+    subtitle: "小小幸福",
+    from: "Rewrite",
+    skills: [
+      {
+      name: "键使",
+      text: "锁定技,每当【键】离开牌堆时，你获得这次移动的所有牌，并指定一名其他角色，视为你对其使用了这张【键】。以此法指定的目标对不包括你的其他角色消失，直到1.你下一次发动该技能2.你死亡。 ",
+      voice: "毕竟小篝就是在这出生的嘛，但是吓了我一跳，最开始还和幽灵一样，现在已经变得和人类一样了。"
+    },
+    {
+      name: "契约",
+      text: "一名角色濒死阶段结束时，若其体力值小于1，你可以令所有角色各摸X张牌，然后弃置区域内的X张牌，X为5-你的体力上限。若此过程中牌堆清空，你恢复体力上限初值，否则你需失去一点体力上限。 ",
+    voice:"我只是为了救瑚太郎君，所以拼命拼命的求你。"
+    },
+  ],
+  designer: "晴空；Sword Elucidator",
+  voice: "斎藤千和",
+  illustrator: "繭咲悠@三日目東タ-39b",
+  },
       {name: '艾',
 	    relative: "https://zh.moegirl.org/%E8%89%BE%C2%B7%E4%BA%9A%E6%96%AF%E6%B1%80",
 	    image: "assets/images/cards/characters/ai.jpg",
@@ -306,55 +409,77 @@
 		voice: "豊崎愛生",
 		illustrator: "Madhouse",
 		},
-      {name: '鎖部葉風',
-	    relative: "https://zh.moegirl.org/%E9%94%81%E9%83%A8%E5%8F%B6%E9%A3%8E",
-	    image: "assets/images/cards/characters/hakaze.jpg",
-	    maxHp: 3,
-	    subtitle: "初始的魔法使",
-	    from: "绝园的暴风雨",
-	    skills: [
-	      {
-		    name: "贡品「文明贡品」",
-		    text: "每当一名角色造成一次伤害时，你可以将牌堆顶部的三张牌依次置入弃牌堆，若其中存在非延时类锦囊牌，你获得一枚“魔道具”标记。  ",
-		    voice: "如此高度的文明产物...为什么会恰巧落在我的附近..."
-		  },
-		  {
-		    name: "结界「守护之魔法」",
-		    text: "出牌阶段，你可以弃置1枚“魔道具”标记并指定一名没有“结界”标记的角色，你令其获得1枚“结界”标记。每当拥有“结界”标记的角色受到伤害时，其须弃置1枚“结界”标记并令此伤害-1。",
-			voice: "听我调遣！"
-		  },
-		],
-		designer: "Sword Elucidator",
-		voice: "沢城みゆき",
-		illustrator: "pixiv いやくん",
-		},
-      {name: '五河琴里',
-	    relative: "https://zh.moegirl.org/%E4%BA%94%E6%B2%B3%E7%90%B4%E9%87%8C",
-	    image: "assets/images/cards/characters/kotori.jpg",
-	    maxHp: 3,
-	    subtitle: "炎魔妹妹",
-	    from: "约会大作战",
-	    skills: [
-	      {
-		    name: "五番「神威灵装·五番（Elohim Gibor）」",
-		    text: "游戏开始时，你获得3枚 Efreet 标记；每当你处于濒死状态被救回，你获得一枚 Efreet 标记。回合开始前，若你没有 Efreet 标记，你失去所有技能。准备阶段，你可以弃置一个 Efreet 标记，并获得【涅槃】和【灼烂歼鬼（Camael）】",
-		    voice: "神威灵装·五番（Elohim Gibor）！"
-		  },
-		  {
-		    name: "涅槃「伤势复原」",
-		    text: "唤醒技,锁定技,你受到一次伤害后，回复一点体力。",
-			voice: "你还真是会玩啊。"
-		  },
-		  {
-		    name: "奸鬼「灼烂歼鬼（Camael）」",
-		    text: "唤醒技,出牌阶段限一次，你可以指定任意名其他角色，对这些角色造成一点火焰伤害，弃置这些角色各两张牌，然后摸三张牌。 ",
-			voice: "灼烂歼鬼（Camael）·炮（Megiddo）！"
-		  },
-		],
-		designer: "御坂20623",
-		voice: "竹達彩奈",
-		illustrator: "ちゃわん",
-		},
+    {name: '贝伦卡斯泰露',
+    relative: "https://zh.moegirl.org/%E8%B4%9D%E4%BC%A6%E5%8D%A1%E6%96%AF%E6%B3%B0%E9%9C%B2",
+    image: "assets/images/cards/characters/0211/majyou.png",
+    maxHp: 3,
+    subtitle: "奇迹之魔女",
+    from: "海猫鸣泣之时",
+    skills: [
+      {
+      name: "奇迹宣言",
+      text: "当一名角色受到其他角色伤害而进入濒死状态时，你可令该角色和伤害来源各进行一次判定；若判定点数相同，则该角色体力恢复至其体力上限，伤害来源失去全部体力。（该技能对一名角色一局游戏只能使用一次） ",
+      voice: "你爱怎么样就怎么样吧，既然如此那我就认真了。"
+    },
+    {
+      name: "碎片筛选",
+      text: "在一名角色的判定牌生效前，你可用牌堆顶牌代替判定牌且你可重复此流程。 ",
+    voice: "这样一边倒的游戏 真无聊。"
+    },
+  ],
+  designer: "海猫鸣泣之时吧&果然萝卜斩",
+  voice: "田村ゆかり",
+  illustrator: "ひさｎ(@Pixiv)",
+  },
+    {name: '古手梨花',
+    relative: "https://zh.moegirl.org/%E5%8F%A4%E6%89%8B%E6%A2%A8%E8%8A%B1",
+    image: "assets/images/cards/characters/rika2.jpg",
+    maxHp: 3,
+    subtitle: "无尽轮回の巫女",
+    from: "海猫鸣泣之时",
+    skills: [
+      {
+      name: "轮回",
+      text: "锁定技,摸牌阶段，你少摸一张牌（最少为0）。当你使用牌因弃牌、使用结算完毕将要进入弃牌堆时，你可以获得之并置于武将牌上方。回合开始时，回合结束阶段开始时，你获得武将牌上的所有牌。 ",
+      voice: "我到底该怎么办...该怎么办..."
+    },
+  ],
+  designer: "帕秋莉·萝莉姬",
+  voice: "田村ゆかり",
+  illustrator: "KayaK",
+  },
+    {name: '右代宮戦人',
+    relative: "https://zh.moegirl.org/%E5%8F%B3%E4%BB%A3%E5%AE%AB%E6%88%98%E4%BA%BA",
+    image: "assets/images/cards/characters/0211/battler.png",
+    maxHp: 4,
+    subtitle: "翻盘狂魔",
+    from: "海猫鸣泣之时",
+    skills: [
+      {
+      name: "掀桌",
+      text: "你死亡时，你可以依次指出每个角色的身份，若正确，你复活并回复至体力上限，令场上所有角色的牌、标记、武将牌、各牌堆均置入弃牌堆，复活各角色，所有角色均摸取一张武将牌，然后你重新分配各角色的身份（主公只能有一个）。 ",
+    },
+  ],
+  designer: "Sword Elucidator",
+  voice: "小野大輔",
+  illustrator: "水野英多",
+  },
+    {name: '魔·右代宮戦人',
+    relative: "https://zh.moegirl.org/%E5%8F%B3%E4%BB%A3%E5%AE%AB%E6%88%98%E4%BA%BA",
+    image: "assets/images/cards/characters/0211/battler2.png",
+    maxHp: 4,
+    subtitle: "无限黄金魔术师",
+    from: "海猫鸣泣之时",
+    skills: [
+      {
+      name: "布棋",
+      text: "游戏开始时或你受到一次伤害后，你可获得所有其他角色手牌，并由当前回合角色开始，依次交给每名其他角色等同于其原有手牌张数的手牌。  ",
+    },
+  ],
+  designer: "Sword Elucidator",
+  voice: "小野大輔",
+  illustrator: "水野英多",
+  },
       {name: '右代宮縁寿',
 	    relative: "https://zh.moegirl.org/%E5%8F%B3%E4%BB%A3%E5%AE%AB%E7%BC%98%E5%AF%BF",
 	    image: "assets/images/cards/characters/anje.jpg",
@@ -377,6 +502,26 @@
 		voice: "佐藤利奈",
 		illustrator: "時火",
 		},
+    {name: '木之本樱',
+    relative: "https://zh.moegirl.org/%E6%9C%A8%E4%B9%8B%E6%9C%AC%E6%A8%B1",
+    image: "assets/images/cards/characters/sakura.jpg",
+    maxHp: 3,
+    subtitle: "初代萌王",
+    from: "魔卡少女樱",
+    skills: [
+      {
+      name: "百变",
+      text: "准备阶段开始时，你需失去所有“百变”和“库洛”以外的技能；若你的体力上限大于6，将你的体力上限设定为6；若你的体力上限小于3，将你的体力上限设定为3。你可以翻开牌堆顶X张牌（X为你失去的你的体力值），根据翻开的牌获得技能，然后获得这些手牌。 ",
+    },
+    {
+      name: "库洛",
+      text: "锁定技,你的手牌上限为52。 ",
+    },
+  ],
+  designer: "幽灵;御坂;萝莉姬",
+  voice: "丹下桜",
+  illustrator: "",
+  },
     {name: '姫柊雪菜',
     relative: "https://zh.moegirl.org/%E5%A7%AC%E6%9F%8A%E9%9B%AA%E8%8F%9C",
     image: "assets/images/cards/characters/yukina.jpg",
@@ -421,6 +566,33 @@
 		voice: "瀬戸麻沙美",
 		illustrator: "",
 		},
+    {name: '五河琴里',
+    relative: "https://zh.moegirl.org/%E4%BA%94%E6%B2%B3%E7%90%B4%E9%87%8C",
+    image: "assets/images/cards/characters/kotori.jpg",
+    maxHp: 3,
+    subtitle: "炎魔妹妹",
+    from: "约会大作战",
+    skills: [
+      {
+      name: "五番「神威灵装·五番（Elohim Gibor）」",
+      text: "游戏开始时，你获得3枚 Efreet 标记；每当你处于濒死状态被救回，你获得一枚 Efreet 标记。回合开始前，若你没有 Efreet 标记，你失去所有技能。准备阶段，你可以弃置一个 Efreet 标记，并获得【涅槃】和【灼烂歼鬼（Camael）】",
+      voice: "神威灵装·五番（Elohim Gibor）！"
+    },
+    {
+      name: "涅槃「伤势复原」",
+      text: "唤醒技,锁定技,你受到一次伤害后，回复一点体力。",
+    voice: "你还真是会玩啊。"
+    },
+    {
+      name: "奸鬼「灼烂歼鬼（Camael）」",
+      text: "唤醒技,出牌阶段限一次，你可以指定任意名其他角色，对这些角色造成一点火焰伤害，弃置这些角色各两张牌，然后摸三张牌。 ",
+    voice: "灼烂歼鬼（Camael）·炮（Megiddo）！"
+    },
+  ],
+  designer: "御坂20623",
+  voice: "竹達彩奈",
+  illustrator: "ちゃわん",
+  },
       {name: '时崎狂三',
 	    relative: "https://zh.moegirl.org/%E6%97%B6%E5%B4%8E%E7%8B%82%E4%B8%89",
 	    image: "assets/images/cards/characters/kurumi.jpg",
@@ -447,80 +619,6 @@
 		designer: "御坂20623",
 		voice: "真田麻美",
 		illustrator: "入绘由君（君君々）",
-		},
-      {name: '木之本樱',
-	    relative: "https://zh.moegirl.org/%E6%9C%A8%E4%B9%8B%E6%9C%AC%E6%A8%B1",
-	    image: "assets/images/cards/characters/sakura.jpg",
-	    maxHp: 3,
-	    subtitle: "初代萌王",
-	    from: "魔卡少女樱",
-	    skills: [
-	      {
-		    name: "百变",
-		    text: "准备阶段开始时，你需失去所有“百变”和“库洛”以外的技能；若你的体力上限大于6，将你的体力上限设定为6；若你的体力上限小于3，将你的体力上限设定为3。你可以翻开牌堆顶X张牌（X为你失去的你的体力值），根据翻开的牌获得技能，然后获得这些手牌。 ",
-		  },
-		  {
-		    name: "库洛",
-		    text: "锁定技,你的手牌上限为52。 ",
-		  },
-		],
-		designer: "幽灵;御坂;萝莉姬",
-		voice: "丹下桜",
-		illustrator: "",
-		},
-      {name: '优克莉伍德',
-	    relative: "https://zh.moegirl.org/%E4%BC%98%E5%85%8B%E9%87%8C%E4%BC%8D%E5%BE%B7",
-	    image: "assets/images/cards/characters/eu.jpg",
-	    maxHp: 3,
-	    subtitle: "沉默的死灵师",
-	    from: "这就是僵尸吗",
-	    skills: [
-	      {
-		    name: "谶言",
-		    text: "每当你需使用或打出一张牌时，你可以弃置两张牌或失去1点体力并声明你需使用的牌，你视为使用此牌，每阶段限一次。 ",
-		    voice: "我明白的。"
-		  },
-		  {
-		    name: "通灵",
-		    text: "限定技，出牌阶段，你可以选择一项：1、指定一名主公以外的体力值不大于1的其他角色，你杀死该角色，然后令其复活并变身为僵尸。2、指定一名已死亡角色，令其变身为僵尸。",
-			voice: "太温吞，酸死了，真差劲。"
-		  },
-		],
-		designer: "御坂20623；黑猫roy-音频",
-		voice: "月宫みどり",
-		illustrator: "Windforcelan",
-		},
-      {name: '右代宮戦人',
-	    relative: "https://zh.moegirl.org/%E5%8F%B3%E4%BB%A3%E5%AE%AB%E6%88%98%E4%BA%BA",
-	    image: "assets/images/cards/characters/0211/battler.png",
-	    maxHp: 4,
-	    subtitle: "翻盘狂魔",
-	    from: "海猫鸣泣之时",
-	    skills: [
-	      {
-		    name: "掀桌",
-		    text: "你死亡时，你可以依次指出每个角色的身份，若正确，你复活并回复至体力上限，令场上所有角色的牌、标记、武将牌、各牌堆均置入弃牌堆，复活各角色，所有角色均摸取一张武将牌，然后你重新分配各角色的身份（主公只能有一个）。 ",
-		  },
-		],
-		designer: "Sword Elucidator",
-		voice: "小野大輔",
-		illustrator: "水野英多",
-		},
-      {name: '魔·右代宮戦人',
-	    relative: "https://zh.moegirl.org/%E5%8F%B3%E4%BB%A3%E5%AE%AB%E6%88%98%E4%BA%BA",
-	    image: "assets/images/cards/characters/0211/battler2.png",
-	    maxHp: 4,
-	    subtitle: "无限黄金魔术师",
-	    from: "海猫鸣泣之时",
-	    skills: [
-	      {
-		    name: "布棋",
-		    text: "游戏开始时或你受到一次伤害后，你可获得所有其他角色手牌，并由当前回合角色开始，依次交给每名其他角色等同于其原有手牌张数的手牌。  ",
-		  },
-		],
-		designer: "Sword Elucidator",
-		voice: "小野大輔",
-		illustrator: "水野英多",
 		},
       {name: '美樹沙耶香',
 	    relative: "https://zh.moegirl.org/%E7%BE%8E%E6%A0%91%E6%B2%99%E8%80%B6%E9%A6%99",
@@ -555,55 +653,6 @@
 		designer: "昂翼天使",
 		voice: "野中藍",
 		illustrator: "SHAFT",
-		},
-      {name: '吉尔伽美什',
-	    relative: "https://zh.moegirl.org/%E5%90%89%E5%B0%94%E4%BC%BD%E7%BE%8E%E4%BB%80(Fate)",
-	    image: "assets/images/cards/characters/kinpika.jpg",
-	    maxHp: 4,
-	    subtitle: "金闪闪",
-	    from: "Fate Zero/Fate Stay Night",
-	    skills: [
-	      {
-		    name: "财宝「Gate of Babylon」",
-		    text: "回合开始时，你可以搜寻一张武器牌并放在你的武将牌上，称为“王之财宝”。出牌阶段，你可以将任意张武器牌置入“王之财宝”。你可选择一张“王之财宝”，将其视为你对一名其他角色使用了一张任意属性的【杀】。以此法使用的【杀】无视距离且不计入回合次数限制。",
-		    voice: "Gate of Babylon"
-		  },
-		  {
-		    name: "天锁「天之锁」",
-		    text: "你指定一名其他角色为唯一目标时，可以令其横置。你指定横置的角色为目标使用【杀】时，其需弃置一张基本牌，否则该【杀】不能闪避。",
-			voice: "天之锁！"
-		  },
-		],
-		designer: "Sword Elucidator",
-		voice: "関智一",
-		illustrator: "null",
-		},
-      {name: '衛宮切嗣',
-	    relative: "https://zh.moegirl.org/%E5%8D%AB%E5%AE%AB%E5%88%87%E5%97%A3",
-	    image: "assets/images/cards/characters/kiritsugu.jpg",
-	    maxHp: 4,
-	    subtitle: "正义天秤的衡量者",
-	    from: "Fate Zero",
-	    skills: [
-	      {
-		    name: "起源「起源弹」",
-		    text: "出牌阶段，你可以失去一点体力上限，获得一发“起源弹”。若你拥有起源弹，你额外摸“起源弹”数目张牌，你回合使用【杀】次数+“起源弹”数目。你使用【杀】指定一名角色时，需选择是否为“起源弹”（目标不知道选项），当你的【杀】造成的伤害时，若为“起源弹”，目标失去副将外的所有的技能。",
-		    voice: "这就是小少爷的礼装，起源弹。"
-		  },
-		  {
-		    name: "逼令「自我强制证文」",
-		    text: "限定技，你指定一名角色，令其获得效果：你对其造成伤害时，取消之，且其不能成为起源弹的目标。若该角色有副将，令该角色移除自己的副将；若该角色没有副将，其受到你指定的你和其以外的来源的两张【杀】（若无来源则无效）。",
-			voice: "嗯，成立了，我已经无法再伤害你们了。仅限我。"
-		  },
-		  {
-		    name: "剑鞘「亚瑟王的治愈之力」",
-		    text: "限定技，当一名角色受到造成濒死的伤害时，你可以取消之并令其回复一点体力。 ",
-			voice: "还活着...还活着...还活着......"
-		  },
-		],
-		designer: "Sword Elucidator",
-		voice: "小山力也",
-		illustrator: "砂雲",
 		},
       {name: '社长八云',
 	    relative: "https://zh.moegirl.org/%E6%90%AC%E8%BF%90%E7%A4%BE",
@@ -690,28 +739,29 @@
 		voice: "福山潤",
 		illustrator: "Sunrise",
 		},
-      {name: '迪卢木多',
-	    relative: "https://zh.moegirl.org/%E8%BF%AA%E5%B0%94%E5%A7%86%E5%BE%B7%C2%B7%E5%A5%A5%E8%BF%AA%E9%82%A3(Fate)",
-	    image: "assets/images/cards/characters/0211/dirm.png",
-	    maxHp: 4,
-	    subtitle: "光辉之貌",
-	    from: "Fate Zero",
-	    skills: [
-	      {
-		    name: "破魔",
-		    text: "锁定技，你使用【杀】时，无视目标角色的防具。",
-		    voice: "鲜红地，舞动吧。"
-		  },
-		  {
-		    name: "必灭",
-		    text: "每当你使用的【杀】造成伤害后，你可令受到伤害的角色获得1枚“咒”标记，拥有该标记的角色回复体力时，取消之。你死亡时，弃置场上所有的”咒“标记。 ",
-			voice: "飞舞吧，Gae·Buidhe！"
-		  },
-		],
-		designer: "银龙幽影",
-		voice: "緑川光",
-		illustrator: "TYPE-MOON",
-		},
+    {name: '优克莉伍德',
+    relative: "https://zh.moegirl.org/%E4%BC%98%E5%85%8B%E9%87%8C%E4%BC%8D%E5%BE%B7",
+    image: "assets/images/cards/characters/eu.jpg",
+    maxHp: 3,
+    subtitle: "沉默的死灵师",
+    from: "这就是僵尸吗",
+    skills: [
+      {
+      name: "谶言",
+      text: "每当你需使用或打出一张牌时，你可以弃置两张牌或失去1点体力并声明你需使用的牌，你视为使用此牌，每阶段限一次。 ",
+      voice: "我明白的。"
+    },
+    {
+      name: "通灵",
+      text: "限定技，出牌阶段，你可以选择一项：1、指定一名主公以外的体力值不大于1的其他角色，你杀死该角色，然后令其复活并变身为僵尸。2、指定一名已死亡角色，令其变身为僵尸。",
+    voice: "太温吞，酸死了，真差劲。"
+    },
+  ],
+  designer: "御坂20623；黑猫roy-音频",
+  voice: "月宫みどり",
+  illustrator: "Windforcelan",
+  },
+
       {name: '露娜莉亚',
 	    relative: "https://zh.moegirl.org/%E6%9C%88%E5%85%89%E5%98%89%E5%B9%B4%E5%8D%8E",
 	    image: "assets/images/cards/characters/0211/runa.png",
@@ -739,38 +789,7 @@
 		voice: "红野ミア",
 		illustrator: "Nitro+",
 		},
-      {name: '英灵卫宫',
-	    relative: "https://zh.moegirl.org/%E5%8D%AB%E5%AE%AB%E5%A3%AB%E9%83%8E",
-	    image: "assets/images/cards/characters/0211/emiya.png",
-	    maxHp: 4,
-	    subtitle: "冶炼的英雄",
-	    from: "Fate Stay Night",
-	    skills: [
-	      {
-		    name: "投影",
-		    text: "出牌阶段限一次，若你的装备区没有武器，你可以声明一种武器，获得其特效直到回合结束。",
-		    voice: "Trace......on!"
-		  },
-		  {
-		    name: "崩坏",
-		    text: "你可以将一张装备牌当无距离限制的【杀】使用。",
-			voice: "螺旋剑！"
-		  },
-		  {
-		    name: "剑咏",
-		    text: "弃牌阶段开始时，若此回合内你未造成伤害，可以摸X张牌。若如此做，你可以将至多X张手牌置于武将牌上，称为“咏”。（X为你已损失的体力值，至少为1；） ",
-			voice: "I am the bone of my sword."
-		  },
-		  {
-		    name: "剑制",
-		    text: "觉醒技，结束阶段开始时，若你的”咏“的数量达到三张或更多时，你减1点体力上限，获得每名其他角色各一张手牌并置于你的武将牌上，然后获得技能”剑雨“和”炽天“，此回合结束后进行一个额外的回合。 ",
-			voice: "So as I pray, unlimited blade works. "
-		  },
-		],
-		designer: "昂翼天使",
-		voice: "諏訪部 順一",
-		illustrator: "Type Moon",
-		},
+
       {name: '不破爱花',
 	    relative: "https://zh.moegirl.org/%E4%B8%8D%E7%A0%B4%E7%88%B1%E8%8A%B1",
 	    image: "assets/images/cards/characters/0211/aika.png",
@@ -798,65 +817,29 @@
 		voice: "花澤 香菜",
 		illustrator: "Bones",
 		},
-      {name: '贝伦卡斯泰露',
-	    relative: "https://zh.moegirl.org/%E8%B4%9D%E4%BC%A6%E5%8D%A1%E6%96%AF%E6%B3%B0%E9%9C%B2",
-	    image: "assets/images/cards/characters/0211/majyou.png",
-	    maxHp: 3,
-	    subtitle: "奇迹之魔女",
-	    from: "海猫鸣泣之时",
-	    skills: [
-	      {
-		    name: "奇迹宣言",
-		    text: "当一名角色受到其他角色伤害而进入濒死状态时，你可令该角色和伤害来源各进行一次判定；若判定点数相同，则该角色体力恢复至其体力上限，伤害来源失去全部体力。（该技能对一名角色一局游戏只能使用一次） ",
-		    voice: "你爱怎么样就怎么样吧，既然如此那我就认真了。"
-		  },
-		  {
-		    name: "碎片筛选",
-		    text: "在一名角色的判定牌生效前，你可用牌堆顶牌代替判定牌且你可重复此流程。 ",
-			voice: "这样一边倒的游戏 真无聊。"
-		  },
-		],
-		designer: "海猫鸣泣之时吧&果然萝卜斩",
-		voice: "田村ゆかり",
-		illustrator: "ひさｎ(@Pixiv)",
-		},
-      {name: '古手梨花',
-	    relative: "https://zh.moegirl.org/%E5%8F%A4%E6%89%8B%E6%A2%A8%E8%8A%B1",
-	    image: "assets/images/cards/characters/rika2.jpg",
-	    maxHp: 3,
-	    subtitle: "无尽轮回の巫女",
-	    from: "海猫鸣泣之时",
-	    skills: [
-	      {
-		    name: "轮回",
-		    text: "锁定技,摸牌阶段，你少摸一张牌（最少为0）。当你使用牌因弃牌、使用结算完毕将要进入弃牌堆时，你可以获得之并置于武将牌上方。回合开始时，回合结束阶段开始时，你获得武将牌上的所有牌。 ",
-		    voice: "我到底该怎么办...该怎么办..."
-		  },
-		],
-		designer: "帕秋莉·萝莉姬",
-		voice: "田村ゆかり",
-		illustrator: "KayaK",
-		},
-      {name: '佩斯特',
-	    relative: "https://zh.moegirl.org/%E9%97%AE%E9%A2%98%E5%84%BF%E7%AB%A5%E9%83%BD%E6%9D%A5%E8%87%AA%E5%BC%82%E4%B8%96%E7%95%8C",
-	    image: "assets/images/cards/characters/0211/pest.png",
-	    maxHp: 4,
-	    subtitle: "黑死病魔王",
-	    from: "问题儿童都来自异世界",
-	    skills: [
-	      {
-		    name: "源头",
-		    text: "游戏开始阶段，你获得“鼠疫”，“鼠疫”对你无效，你无法获得“抗体”。每当你受到“鼠疫”持有角色伤害或对其造成伤害时，可以获得其所拥有的“鼠疫”，或者给予其自己所拥有的“鼠疫”，并防止此次伤害。不能无视抗体 ",
-		  },
-		  {
-		    name: "鼠疫",
-		    text: "回合结束的时候，失去1点体力，与你距离为1的角色将以80%获得“鼠疫”，距离为2的角色将以50%获得“鼠疫”，持有者将以50%的几率失去“鼠疫”获得免疫。获得免疫者以50%失去“抗体”  ",
-		  },
-		],
-		designer: "帕秋莉·萝莉姬",
-		voice: "",
-		illustrator: "KayaK",
-		},
+    {name: '鎖部葉風',
+    relative: "https://zh.moegirl.org/%E9%94%81%E9%83%A8%E5%8F%B6%E9%A3%8E",
+    image: "assets/images/cards/characters/hakaze.jpg",
+    maxHp: 3,
+    subtitle: "初始的魔法使",
+    from: "绝园的暴风雨",
+    skills: [
+      {
+      name: "贡品「文明贡品」",
+      text: "每当一名角色造成一次伤害时，你可以将牌堆顶部的三张牌依次置入弃牌堆，若其中存在非延时类锦囊牌，你获得一枚“魔道具”标记。  ",
+      voice: "如此高度的文明产物...为什么会恰巧落在我的附近..."
+    },
+    {
+      name: "结界「守护之魔法」",
+      text: "出牌阶段，你可以弃置1枚“魔道具”标记并指定一名没有“结界”标记的角色，你令其获得1枚“结界”标记。每当拥有“结界”标记的角色受到伤害时，其须弃置1枚“结界”标记并令此伤害-1。",
+    voice: "听我调遣！"
+    },
+  ],
+  designer: "Sword Elucidator",
+  voice: "沢城みゆき",
+  illustrator: "pixiv いやくん",
+  },
+
       {name: '立花響',
 	    relative: "https://zh.moegirl.org/%E7%AB%8B%E8%8A%B1%E5%93%8D",
 	    image: "assets/images/cards/characters/0211/hibiki.png",
@@ -945,6 +928,26 @@
 		voice: "高垣彩陽",
 		illustrator: "mototenn(@Pixiv）",
 		},
+    {name: '佩斯特',
+    relative: "https://zh.moegirl.org/%E9%97%AE%E9%A2%98%E5%84%BF%E7%AB%A5%E9%83%BD%E6%9D%A5%E8%87%AA%E5%BC%82%E4%B8%96%E7%95%8C",
+    image: "assets/images/cards/characters/0211/pest.png",
+    maxHp: 4,
+    subtitle: "黑死病魔王",
+    from: "问题儿童都来自异世界",
+    skills: [
+      {
+      name: "源头",
+      text: "游戏开始阶段，你获得“鼠疫”，“鼠疫”对你无效，你无法获得“抗体”。每当你受到“鼠疫”持有角色伤害或对其造成伤害时，可以获得其所拥有的“鼠疫”，或者给予其自己所拥有的“鼠疫”，并防止此次伤害。不能无视抗体 ",
+    },
+    {
+      name: "鼠疫",
+      text: "回合结束的时候，失去1点体力，与你距离为1的角色将以80%获得“鼠疫”，距离为2的角色将以50%获得“鼠疫”，持有者将以50%的几率失去“鼠疫”获得免疫。获得免疫者以50%失去“抗体”  ",
+    },
+  ],
+  designer: "帕秋莉·萝莉姬",
+  voice: "",
+  illustrator: "KayaK",
+  },
     ];
   }
 })();
